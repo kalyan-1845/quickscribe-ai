@@ -112,7 +112,7 @@ if summarize:
     else:
         with st.spinner("Generating your summary..."):
             API_URL = f"https://api-inference.huggingface.co/models/{model}"
-            headers = {"Authorization": "Bearerhf_ZzEpuLELCPwwGaSBrwaTGxNwDAGyLUkjjo"}  # Replace with your token
+            headers = {"Authorization": "Bearerhf_vnMBivaIEfEkKWHhIKPiaFBjWdaaAinsNf"}  # Replace with your token
             payload = {"inputs": user_input}
             r = requests.post(API_URL, headers=headers, json=payload)
 
